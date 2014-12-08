@@ -1,4 +1,3 @@
-
 #ifndef CPNGMANIP_H
 #define CPNGMANIP_H
 
@@ -17,7 +16,8 @@ struct FileInfo
 	png_bytep * rowPointers;
 };
 
-struct FileInfo ReadInFile(char * fileName);  //Reads in a file and returns a struct that represents an image.
-void WriteToFile(char * fileName, struct FileInfo file); //Writes an image struct to a png file.
-struct FileInfo MakeImageStruct(int width, int heigth); //Makes a new image struct.
+struct FileInfo read_in_file(char *fileName);  //Reads in a file and returns a struct that represents an image.
+void write_to_file(char *fileName, struct FileInfo file); //Writes an image struct to a png file.
+struct FileInfo make_image_struct(int width, int heigth); //Makes a new image struct.
+
 #endif
